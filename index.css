@@ -103,10 +103,12 @@ body{
     background-color: #C97A2C;
     width: 45px;
     height: 3px;
+    transition: all .2s ease;
     border: #000000 2px solid;
 }
 .barra button span:last-child{
     background-color: #C97A2C;
+    transition: all .2s ease;
     border: #000000 2px solid;
     width: 45px;
     height: 3px;

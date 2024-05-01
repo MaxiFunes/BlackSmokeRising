@@ -37,8 +37,8 @@ document.querySelector('.gmail').addEventListener('click', function() {
     var menuspan2 = document.getElementById('menuspan2');
     if (menu.style.transform === 'translateX(100%)') {
       menu.style.transform = 'translateX(0)';
-      menuspan1.style.transform = 'translateX(0)';
-      menuspan2.style.transform = 'translateX(0)';
+      menuspan1.style.transform = 'rotate(-45deg) translate(-5px, 5px)';
+      menuspan2.style.transform = 'rotate(45deg)translate(-5px, -5px)';
 
     } else {
         menu.style.transform = 'translateX(100%)';
@@ -49,7 +49,11 @@ document.querySelector('.gmail').addEventListener('click', function() {
   
   function closeMenu() {
     var menu = document.getElementById('menu');
+    var menuspan1 = document.getElementById('menuspan1');
+    var menuspan2 = document.getElementById('menuspan2');
     menu.style.transform = 'translateX(100%)';
-  }
+    menuspan1.style.transform = 'translateX(0)';
+    menuspan2.style.transform = 'translateX(0)';
+}
   
   
