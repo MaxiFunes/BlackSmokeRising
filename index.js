@@ -8,7 +8,12 @@ window.addEventListener('scroll', function() {
         sectionP.style.opacity = '.5';
     }
 });
-document.querySelector('.gmail').addEventListener('click', function() {
+// Seleccionar todos los elementos con la clase "gmail"
+var gmailElements = document.querySelectorAll('.gmail');
+
+// Iterar sobre cada elemento y agregar el evento de clic
+gmailElements.forEach(function(element) {
+  element.addEventListener('click', function() {
     var emailAddress = "blacksmokerising24@gmail.com";
     
     // Crear un elemento de entrada de texto
@@ -30,6 +35,8 @@ document.querySelector('.gmail').addEventListener('click', function() {
     // Informar al usuario que se ha copiado el correo electrónico
     alert("Correo electrónico copiado al portapapeles: " + emailAddress);
   });
+});
+
   //menu
   function toggleMenu() {
       var menu = document.getElementById('menu');
