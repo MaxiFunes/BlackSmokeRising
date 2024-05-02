@@ -1,11 +1,11 @@
 window.addEventListener('scroll', function() {
-    var sectionP = document.querySelector('.section2-p');
+    var sectionP = document.querySelector('.section1-i');
     var scrollPosition = window.scrollY;
 
     if (scrollPosition >= 110) {
         sectionP.style.opacity = '0';
     } else {
-        sectionP.style.opacity = '.5';
+        sectionP.style.opacity = '1';
     }
 });
 // Seleccionar todos los elementos con la clase "gmail"

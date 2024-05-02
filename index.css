@@ -101,7 +101,7 @@ body{
 }
 .barra button span:first-child{
     background-color: #C97A2C;
-    width: 45px;
+    width: 35px;
     height: 3px;
     transition: all .2s ease;
     border: #000000 2px solid;
@@ -110,7 +110,7 @@ body{
     background-color: #C97A2C;
     transition: all .2s ease;
     border: #000000 2px solid;
-    width: 45px;
+    width: 35px;
     height: 3px;
 }
 .menu{
@@ -119,7 +119,7 @@ body{
 /* HERO SECTION 1 */
 .section1{
     width: 100%;
-    height: 88vh;
+    height: 92vh;
     padding-top: 8vh;
     color: #C97A2C;
     display: flex;
@@ -192,26 +192,24 @@ body{
     background-color: #FF6F31;
     padding-bottom: 10vh;
 }
-.section2-p{
-    width: 100%;
+.section1-i{
+    width: fit-content;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: fit-content;
+    font-size: 2em;
     font-family: 'Stara';
-    letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 900;
-    color: #000000;
-    opacity: .5;
+    color: #ffffff;
     transition: all .3s ease;
     user-select: none;
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
     cursor: default;
-}
-.section2-p i{
-    display: flex;
-    font-weight: 900;
-    color: #000000;
-    font-size: 1.4em;
+    border: 1px dashed #ffffff;
+    border-radius: 10em;
 }
 .section2 h2{
     width: 100%;
@@ -406,7 +404,8 @@ body{
     height: 60vh;
     padding-top: 5vh;
     display: flex;
-    flex-direction: column;
+        height: fit-content;
+        flex-direction: column;
     align-items: center;
     background-color: #C97A2C;
     color: #000000;
@@ -559,7 +558,12 @@ body{
     }
     .section1{
         overflow: hidden;
-        height: 84vh;
+        height: 87vh;
+    }
+    .section1-i{
+        margin: 0 auto;
+        right: auto;
+        bottom: 5%;
     }
     .section1_div1{
         overflow-y: hidden;
@@ -571,12 +575,11 @@ body{
     .section1_div1-divideo{
         display: flex;
         justify-content: center;
+        position: fixed;
         height: 0;
         z-index: -1;
-        top: 10vh;
         align-items: center;
         width: 100%;
-        position: relative;
     }
     .section1_div1-videocel{
         height: 100vh;
@@ -590,8 +593,9 @@ body{
         width: 100%;
         font-family: 'Grenze';
         font-weight: 900;
-        font-size: 3.7em;
-        white-space: nowrap;
+        font-size: 4.5em;
+        text-align: center;
+        white-space: wrap;
         color: #C97A2C;
         margin-top: -5vh;
         text-shadow: 
@@ -602,10 +606,11 @@ body{
         -webkit-text-stroke: #000000 1px;    
     }
     .section1_div1 p{
-        margin-bottom: 10vh;
+        margin-top: 10vh;
+        margin-bottom: 10px;
     }
     .section1_div1 img{
-        width: 60%;
+        width: 40%;
     }
     .section1_div2{
         background: none;
@@ -670,18 +675,26 @@ body{
     }
     .section3{
         overflow: hidden;
+        background-color: #000000;
+    }
+    .section3-p1{
+        font-size: 5em;
+        text-align: center;
+        z-index: 3;
     }
     .section3-p2{
         top: 2vh;
         letter-spacing: -5px;
         line-height: .7em;
         opacity: .2;
+        z-index: 2;
         white-space: wrap;
     }
     .section3-p3{
         width: 90%;
         font-family: "grenze";
         padding-top: 0vh;
+        z-index: 3;
         font-weight: 400;
         font-size: 1.7em;
         align-items: center;
@@ -697,6 +710,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center ;
+        z-index: 3;
         width: 90%;
         padding: 0 5%;
         border-radius: 1em;
@@ -757,12 +771,13 @@ body{
         width: 100%;
         justify-content: center;
         align-items: center;
-        z-index: -1;
         position: relative;
         bottom:40vh;
         opacity: .4;
+        z-index: 2;
     }
     .section3_div2 img{
+        z-index: 2;
         width: 10%;
     }
     .section3_div2 img:nth-child(1){
@@ -785,13 +800,15 @@ body{
     }
     .section4{
         overflow: hidden;
-    }
+    height: 60vh;
+}
     .section4-p1{
         font-size: 3.5em;
         width: 100%;
         padding: 0;
         -webkit-text-stroke: #000000 2px;
         text-align: center;
+        white-space: wrap;
         letter-spacing: -2px;
         text-shadow: 
         -2px -1px 1px black,  
@@ -820,6 +837,7 @@ body{
     }
     .section4-div2-div1{
         display: flex;
+        margin-top: auto;
         align-items: center;
         justify-content: space-around;
         width: 80%;
@@ -860,7 +878,7 @@ body{
         font-weight: 100;
     }
     .section4-div2-div2 p{
-        margin-bottom: 1em;
+        margin-bottom: .5em;
         font-family: "Stara";
         text-decoration: none;
         color: #0000006b;
@@ -869,6 +887,8 @@ body{
         font-family: "Stara";
         text-decoration: none;
         color: #000000f5;
+        opacity: .9;
+        font-weight: 900;
     }
     .section4-div2-p2{
         display: flex;
@@ -877,6 +897,7 @@ body{
         width: 95%;
         padding: 0 2.5%;
         background-color: none;
+        margin-top: auto;
         flex-direction: column;
         text-decoration: none;
         color: #000000;
@@ -896,18 +917,21 @@ body{
         justify-content: center;
         width: 95%;
         gap: 5px;
-        height: 6vh;
+        height: 4vh;
+        margin-top: auto;
         border-top: #000000 1px solid;
         padding: 0 2.5%;
         background-color: none;
         text-decoration: none;
         color: #000000;
         font-weight: 100;
+        opacity: .5;
         font-family: "Stara";
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .section4-div2-p3 a{
         text-decoration: none;
+        white-space: nowrap;
         color: #000000;
         font-family: "Stara";
         font-weight: 900;
